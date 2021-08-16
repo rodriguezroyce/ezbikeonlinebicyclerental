@@ -1,0 +1,144 @@
+:root{
+    --top-nav-color: #0079c4;
+    --left-nav-color: #2c405a;
+    --bg-color: #ecf5fd;
+    --gray: #96a0ad;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'Libre Franklin', sans-serif; */
+/* font-family: 'Padauk', sans-serif; */
+/* font-family: 'Palanquin', sans-serif; */
+.ff-1{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.ff-2{
+    font-family: 'Padauk', sans-serif;
+}
+.gray{
+    background: var(--gray);
+}
+.bg-light-blue{
+    background: var(--top-nav-color);
+}
+.bg-dark-blue{
+    background: var(--left-nav-color);
+}
+.bg-all{
+    background: var(--bg-color);
+}
+.container-fluid{
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-md-1{
+    width: 8.33%;
+}
+.col-md-2{
+    width: 16.67%;
+}
+.col-md-3{
+    width: 25%;
+}
+.col-md-4{
+    width: 33.33%;
+}
+.col-md-5{
+   width: 41.66%; 
+}
+.col-md-6{
+    width: 50%;
+}
+.col-md-7{
+    width: 58.33%;
+}
+.col-md-8{
+    width: 66.67%;
+}
+.col-md-9{
+    width: 75%;
+}
+.col-md-10{
+    width: 83.33%;
+}
+.col-md-11{
+    width: 91.67%;
+}
+.col-md-12{
+    width: 100%;
+}
+.text-light{
+    color: #fff;
+}
+.text-gray{
+    color: var(--gray);
+}
+.p-1{
+    padding: 1rem;
+}
+/* left-nav */
+.left-nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.left-nav li{
+    margin-top: 0.55em;
+    margin-bottom: 0.55em;
+}
+
+
+/* search-box */
+.searchBox{
+    width: 100%;
+    height: 30px;
+    padding: 0.55em;
+    border-radius: 6px;
+    border: 1px solid #bcbcbc;
+    background: var(--top-nav-color);
+    color: #fff;
+}
+.searchBox::-ms-clear{
+    background: #fff;
+}
+.searchBox::placeholder{
+    color: #fff;
+}
+.searchBox:focus{
+    outline: none;
+    color: #fff;
+}
+.utilities{
+    display: flex;
+    justify-content: center;
+}
+.utilities li a{
+    padding: 1rem;
+    color: #fff;
+}
+
+.box-1, .box-2, .box-3, .box-4{
+    background: #fff;
+    margin: 4px;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 1px 1px rgb(218, 218, 218);
+}

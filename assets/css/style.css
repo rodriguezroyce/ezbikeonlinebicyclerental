@@ -1,0 +1,498 @@
+:root{
+    --b500: #3b82F6;
+    --b50: #EFF6FF;
+    --b700: #1D4ED8;
+    --b900: #1E3A8A;
+    --b200: #BFDBFE;
+    --b100: #DBEAFE;
+    --g900: #111827;
+    --g600: #4b5563;
+    --gr400: #34D399;
+    --gr800: #065F46;
+    --green-light_1: #0c5540;
+    --green-light: #81c926;
+    --dark-gray: rgb(33, 37, 41);
+    --g50: #f9fafb;
+    --g100: #f3f4f6;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* fonts */
+.ff-1{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.ff-2{
+    font-family: 'Padauk', sans-serif;
+}
+/* color */
+.bg-dark900{
+    background: var(--g900);
+}
+.bg-light-blue{
+    background: var(--top-nav-color);
+}
+.bg-dark-blue{
+    background: var(--left-nav-color);
+}
+.bg-all{
+    background: var(--bg-color);
+}
+.green-light{
+    color: var(--green-light);
+}
+.green-light-1{
+    color: var(--green-light_1);
+}
+.gr400{
+    color: var(--gr400);
+}
+#signup div{
+    line-height: 1.75em;
+}
+#signup div input{
+    border: 1px solid #353535;
+    outline: none;
+    padding: 0.55em 1rem;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#signup div button a{
+    color: #fff;
+}
+
+#signup div input:focus{
+    box-shadow: none;
+}
+.signup-acc{
+    border: none;
+    padding: 0.55em 1rem;
+    transition: background 400ms ease-out;
+}
+.signup-acc:hover{
+    background: #e1e1e1;
+    border-bottom: 2px solid var(--gr800);
+}
+.signup-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-page_2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form{
+    width: 50%;
+    margin: 0 auto;
+    background: rgba(33, 37, 41,0.8);
+    padding: 1rem;
+}
+.login-form{
+    width: 330px;
+    height: 380px;
+    margin: 0 auto;
+    background: rgba(33,37,41,0.8);
+    box-shadow: 1px 1px 1px 1px rgb(230, 230, 230) !important;
+    padding: 1rem;
+}
+.f-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* utility class */
+.fs-10{font-size :10px;}
+.fs-11{font-size :11px;}
+.fs-12{font-size :12px;}
+.fs-13{font-size :13px;}
+.fs-20{font-size :20px;}
+.fs-21{font-size :21px;}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+.autocomplete-items{
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    color: #fff;
+    padding: 0.55em;
+    font-size: 12px;
+    margin-top: 0.55em;
+    margin-left: 2rem;
+    background: #fff;
+    cursor: pointer;
+    color: #333;
+}
+.autocomplete-items div{
+    border-bottom: 1px solid #ddd;
+    line-height: 1.75em;
+    padding: 0.35em;
+    transition: all 300ms ease-out;
+}
+.autocomplete-items div:hover{
+    background: var(--green-light);
+    color: #fff;
+}
+
+.showcase{
+    height: 85vh;
+    background: url('../img/mountain-biking-95032_1920.jpg') no-repeat;
+    background-size: cover;
+}
+.showcase .showcase-content{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+#main-container{
+    width: 100%;
+    height: 100%;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+.main-navbar{
+    display: flex;
+}
+.main-navbar li:first-child a{
+    color :#ddd;
+}
+.main-navbar li a{
+    color: #bcbcbc;
+    padding: 0.55em 0.75rem;
+}
+.main-navbar li:last-child a{
+    color: #fff;
+}
+
+#nav-right{
+    display: flex;
+    justify-content: flex-end; 
+}
+.logo{
+    letter-spacing: 1px;
+}   
+
+/* landing-page */
+.landing-page{
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+}
+.searchLocator{
+    width: 100%;
+}
+
+
+.searchLocation, .submitLocation{
+    width: 100%;
+    padding: 0.35em;
+    
+    border: none;
+    transition: all 400ms ease-out;
+    color: #fff;
+}
+
+.submitLocation:hover{
+    background: var(--green-light_1);
+
+}
+.searchLocation{
+    outline: none;
+    width: 90%;
+    color: #111827;
+}
+.icon{
+    width: 10%;
+    background: #fff;
+    padding: 0.35em;
+}
+.submitLocation{
+    background: var(--green-light);
+    color: #fff;
+}
+.box-header{
+    font-family: var(--bs-font-sans-serif);
+}
+.img-Container{
+    width: 100%;
+    height: 100%;
+}
+
+#howItWorks{
+    z-index: 100;
+}
+#howItWorks .container .row .col-md-4 .top{
+    width: 100%;
+    height: 250px;
+}
+#howItWorks .container .row .col-md-4 .bottom{
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+}
+.list-bike{
+    background: #4faf43;
+    color: #fff;
+    transition: all 400ms ease-out;
+}
+.list-bike:hover{
+    background: #3a8031;
+    color: #fff;
+}
+
+.showcase-bottom{
+    height: 60vh;
+    width: 100%;
+    background: url('../img/pexels-jonathan-aman-756861.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+}
+.left-content{
+    background: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+    width: 66.67%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+.right-content{
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+    width: 33.4%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* box */
+.box{
+    position: relative;
+}
+.text-inside{
+    position: absolute;
+    bottom: 0px;
+    padding: 0.35em;
+    left: 0px;
+    text-align: left;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    margin-bottom: 0;
+}
+#places .col-md-3{
+    padding: 0;
+}
+.btns{
+    background: none;
+    border: none;
+    color: #bcbcbc;
+    padding: 0 1rem;
+}
+.modal-header-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+.modal-header-title button.active{
+    border-bottom: 2px solid var(--gr800);
+    color: var(--gr800);
+}
+.btn-close{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    
+}
+.error_validation{
+    color: rgb(232, 49, 49);
+    font-size: 12px;
+    margin-left: 4px;
+}
+#lenderForm{
+    display: none;
+}
+/* top-navigation */
+.top-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.top-nav-right{
+    display: flex;
+}
+.top-nav-right li a{
+    padding: 1rem;
+    color: #bcbcbc;
+    font-size: 14px;
+}
+.top-nav-right li:first-child a{
+    font-size: 16px;
+    color: #fff;
+}
+.top-nav-right li:last-child a{
+  
+    color: #fff;
+    padding: 0.55em 1rem;
+}
+.searchBtn{
+    height: 25px;
+    width: 350px;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+   
+}
+.searchBtn:focus{
+    box-shadow: none;
+}
+
+#map{
+    width: 100%;
+    height: 90vh;
+    padding: 0;
+}
+.client-card{
+    width: 50%;
+    height: 270px;
+    position: relative;
+}
+.client-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    
+}
+.client-content .top {
+    background: linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    height: 66.67%;
+    width: 100%;
+}
+.client-content .bottom{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #fff;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+.client-content .bottom .left{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    color: rgb(216, 216, 216);
+ 
+    font-size: 13px;
+    flex-direction: column;
+}
+.client-content .bottom .right{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.profile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgb(211, 211, 211);
+}
+.info{
+    overflow: hidden;
+}
+.profile img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.main-section{
+    width: 100%;
+    display: flex;
+}
+.column-5{
+    width: 41.66%;
+}
+.column-7{
+    width: 58.33%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* client-Page */
+.cover-page{
+    width: 100%;
+    height: 420px;
+    background: #bcbcbc;
+    position: relative;
+}
+.img-size{
+    width: 100vw;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.business-information{
+    background: #191919;
+    color: #fff;
+}
+/* validId */
+#validId ul li{
+    list-style: circle;
+}
+
+
+/* footer */
+
+.footer-links li a{
+    color: var(--b200);
+}
+.footer-links li a:hover{
+    text-decoration: underline;
+}
+
